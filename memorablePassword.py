@@ -11,7 +11,7 @@ for word in wordReader:
     wordList.append(word)
     
 pw = random.sample(wordList, k=4)
-pw = list(itertools.chain(*pw))
+pw = [p[0] for p in pw]
 pw = "-".join(pw)
 
 print(pw)
