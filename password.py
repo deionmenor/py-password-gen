@@ -1,7 +1,19 @@
+import csv
+import random
+import itertools
 
 def generateMemorablePassword():
-    # do something
-    return ""
+    fh = open("data/word_bank.csv", "r")
+    wordReader = csv.reader(fh)
+    wordList = []
+
+    for word in wordReader:
+        wordList.append(word)
+        
+    password = random.sample(wordList, k=4)
+    password = list(itertools.chain(*password))
+    password = "-".join(password)
+    return password
 
 def generateRandomPassword():
     # do something
