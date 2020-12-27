@@ -15,8 +15,11 @@ def generateMemorablePassword():
     return password
 
 def generateRandomPassword():
-    # do something
-    return ""
+    import random
+    import string
+ 
+    pwd = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(15))
+    return pwd
 
 
 def generatePassword(p):
