@@ -40,9 +40,12 @@ while True:
     x = input("Hi! Do you want a new secure password?\n(1) Yes\n(2) No\n")
     
     if x == "1":
-        pwd_type = input("Type?\n(1) Random\n(2) Memorable\n")
-        print(generatePassword(pwd_type))
-        break
+        try:
+            pwd_type = input("Type?\n(1) Random\n(2) Memorable\n")
+            print(generatePassword(pwd_type))
+            break
+        except ValueError:
+            print("Don't be stupid. It said 1 or 2.")
 
     elif x == "2":
         print("Okay then. Your loss\n.")
