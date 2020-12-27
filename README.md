@@ -8,3 +8,4 @@ Weak passwords are no good. Create a Python command line application that genera
 - Skills Required
     - Input/Output
     - String Manipulation
+    - Error handling
