@@ -9,8 +9,8 @@ def generateMemorablePassword():
     for word in wordReader:
         wordList.append(word)
         
-    password = random.sample(wordList, k=4)
-    password = [p[0] for p in password]
+    words = random.sample(wordList, k=4)
+    password = [w[0] for w in words]
     password = "-".join(password)
     return password
 
