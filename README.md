@@ -9,3 +9,5 @@ Weak passwords are no good. Create a Python command line application that genera
     - Input/Output
     - String Manipulation
     - Error handling
+
+![my image](https://www.recipetineats.com/wp-content/uploads/2020/05/Pepperoni-Pizza_5-SQjpg.jpg)
