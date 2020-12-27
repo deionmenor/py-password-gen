@@ -1,11 +1,12 @@
-def generatePassword(answer):
-    print("password123")
+def generatePassword():
+    password = "password123"
+    return password
 
 while True:
     x = input("Hi! Do you want a new secure password?\n")
     
     if x == "Yes":
-        generatePassword(x)
+        print(generatePassword())
         break
 
     elif x == "No":
